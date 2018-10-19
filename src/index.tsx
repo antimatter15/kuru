@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { Schema, Data } from './data'
+import { Data } from './data'
+import { Schema } from './schema'
 import { ResolveGraphQL } from './graphql'
 import { renderWithData, fetchable } from './core'
-import { User, Session, PostComment, Photo, Post } from './types'
+import { User, Session, Comment, Photo, Post } from './types'
 import { ValidateSchema } from './util'
 
 ValidateSchema(Data, Schema)
